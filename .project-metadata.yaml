@@ -8,7 +8,7 @@ api_version: 1
 
 runtimes:
   - editor: Workbench
-    kernel: Python 3.8
+    kernel: Python 3.6
     edition: Standard
 
 tasks:
