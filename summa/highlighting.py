@@ -47,7 +47,8 @@ def match_most_text(text: str, original_text: str) -> List[str]:
     snippets = []
     texts = [text]
     originals = [original_text]
-    while longest := _find_longest_text(texts, originals):
+    longest = _find_longest_text(texts, originals)
+    while longest:
         # keep the longest
         snippets.append(longest)
         # remove longest from text and original_text
@@ -59,6 +60,7 @@ def match_most_text(text: str, original_text: str) -> List[str]:
             new_originals += text.split(longest)
         texts = new_texts
         originals = new_originals
+        longest = _find_longest_text(texts, originals)
     return snippets
 
 
@@ -87,7 +89,8 @@ def _find_longest_text(texts: List[str], original_texts: List[str]) -> Optional[
     candidates = []
     for text in texts:
         for original in original_texts:
-            if chunk := _find_longest_text_single(text, original):
+            chunk = _find_longest_text_single(text, original)
+            if chunk:
                 candidates.append(chunk)
     if candidates:
         return sorted(candidates, key=lambda x: len(x), reverse=True)[0]
