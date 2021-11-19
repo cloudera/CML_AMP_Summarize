@@ -39,7 +39,7 @@ This small library includes functionality to support the **Summarize.** applicat
 
 
 ## Installation
-The code and applications within were developed against Python 3.8.0., and are likely also to function with more recent versions of Python. 
+The code and applications within were developed against Python 3.6, and are likely also to function with more recent versions of Python. 
 
 To install dependencies, first create and activate a new virtual environment through your preferred means, then pip install from the requirements file. We recommend:
 
