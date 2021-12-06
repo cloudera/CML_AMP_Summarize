@@ -11,6 +11,11 @@ runtimes:
     kernel: Python 3.6
     edition: Standard
 
+engine_images:
+  - image_name: engine
+    tags:
+      - 14
+
 tasks:
   - type: create_job
     name: Install dependencies
