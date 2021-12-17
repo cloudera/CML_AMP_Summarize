@@ -2,9 +2,10 @@ attrs==21.2.0
 matplotlib==3.3.4
 cycler >= 0.10.0 # matplotlib dependency -- should be installed automatically but it wasn't when tested on eng cml cluster
 scikit-learn==0.24.2
-spacy==3.2.0
+spacy==3.0.7
 spacy-transformers==1.1.2
 transformers==4.11.3
+https://github.com/explosion/spacy-models/releases/download/en_core_web_sm-3.0.0/en_core_web_sm-3.0.0.tar.gz
 torch==1.10.0
 streamlit==1.2.0
 networkx==2.5.1
