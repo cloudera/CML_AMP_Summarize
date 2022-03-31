@@ -165,12 +165,12 @@ bottom_right.write(f"\n{summary}")
 
 if text == original:
     if text_selection == "cnn":
-        with bottom_right.expander("Qualitative Comparison"):
+        with bottom_right.expander("Quantitative Comparison"):
             st.write("Because the CNN/Daily Mail dataset includes gold standard summaries, \
                 we can do a quantitative comparison with our model output. The standard approach \
                 is to compute the ROUGE score between the model's output and the gold standard.")
             st.pyplot(make_bar_chart(df, row_idx, model_obj.display_name))
             st.write("There are several flavors of ROUGE score. ROUGE-L considers the longest common subsequence in the summary. ")
     if text_selection == "wiki":
-        with bottom_right.expander("Quantitative Comparison"):
+        with bottom_right.expander("Qualitative Comparison"):
             st.markdown(df.iloc[row_idx]['commentary'])
