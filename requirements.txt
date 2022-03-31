@@ -1,13 +1,13 @@
-attrs
-matplotlib
-cycler # matplotlib dependency -- should be installed automatically but it wasn't when tested on eng cml cluster
-scikit-learn
-spacy
-spacy-transformers
-transformers
-torch
-streamlit
-networkx
-pytextrank
-wikipedia
+attrs==21.4.0
+matplotlib==3.3.4
+cycler==0.10.0 
+scikit-learn==1.0.2
+spacy==3.2.4
+spacy-transformers==1.1.5
+transformers==4.17.0
+torch==1.11.0
+streamlit==1.8.1
+networkx==2.7.1
+pytextrank==3.2.3
+wikipedia==1.4.0
 -e .
