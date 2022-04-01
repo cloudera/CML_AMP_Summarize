@@ -3,7 +3,7 @@ description: Extractive and abstractive automatic document summarization.
 author: Cloudera Inc.
 specification_version: 1.0
 prototype_version: 2.0
-date: "2021-09-10"
+date: "2022-04-01"
 
 runtimes:
   - editor: Workbench
@@ -18,7 +18,7 @@ tasks:
     arguments: None
     short_summary: Create job to install dependencies.
     cpu: 2
-    memory: 4
+    memory: 8
     environment:
       TASK_TYPE: CREATE/RUN_JOB
 
