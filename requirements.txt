@@ -1,7 +1,7 @@
 attrs==21.4.0
-matplotlib==3.3.4
+matplotlib==3.5.1
 cycler==0.10.0 
-scikit-learn==1.0.2
+scikit-learn #==1.0.2
 spacy==3.2.4
 spacy-transformers==1.1.5
 transformers==4.17.0
