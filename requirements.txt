@@ -6,7 +6,7 @@ spacy==3.2.4
 spacy-transformers==1.1.5
 transformers==4.17.0
 torch==1.11.0
-streamlit==1.8.1
+streamlit==1.10.0
 networkx==2.7.1
 pytextrank==3.2.3
 wikipedia==1.4.0
