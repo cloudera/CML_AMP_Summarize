@@ -45,4 +45,5 @@ setup(
     version="0.0.1",
     description=""" Models and utilities for the Summarize. AMP. """,
     author="Melanie Beck & Victor Dibia",
+    packages=["summa"],
 )
