@@ -38,5 +38,9 @@
 #
 # ###########################################################################
 
-!pip3 install -r requirements.txt
-!python3 -m spacy download en_core_web_sm
+import sys
+
+sys.exit(1)
+!false || sys.exit(0)
+!pip3 install -r requirements.txt || { echo 'pip install failed' ; exit 1; }
+!python3 -m spacy download en_core_web_sm || { echo 'spacy setup failed' ; exit 1; }
